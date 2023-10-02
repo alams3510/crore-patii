@@ -1,38 +1,166 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.landingPage{
+  background-color: #020230;
+  height: 100vh;
+  width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+.landingPage h1{
+margin: 10px;
+text-align: center;
+color: white;
+font-size: 60px;
+font-weight: bolder;
+}
+.name{
+  padding: 5px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 500;
   text-align: center;
+  border-radius: 5px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.start-btn{
+width: 175px;
+padding: 5px;
+ cursor: pointer;
+ font-weight: 700;
+ border-radius: 5px;
+ border: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.start-btn:hover{
+  background-color: crimson;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.centerElement{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
+.main-page-wrapper{
+   width: 100%;
+  height: 100vh;
+  background-color: #020230;
+  display: flex;
+}
+.main-page-left{
+width: 75%;
+position: relative;
+}
+.main-page-right{
+width: 25%;
+padding: 40px;
+position: relative;
+display: flex;
+align-items:center;
+justify-content: center;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+li{
+  margin-bottom: 5px;
+  padding: 7px;
+  list-style: none;
+}
+.img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.options{
+  position: absolute;
+  width: 100%;
+  top: 430px;
+  left: 11%;
+}
+.counter-btn{
+  position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid white;
+    top: 230px;
+    left: 120px;
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.questions-btn{
+  position: absolute;
+    width: 77%;
+    top: 350px;
+    left: 10%;
+    background-color: #020230;
+    border-radius: 10px;
+    padding: 8px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 2px solid white;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    
+}
+.option-btn{
+  width: 35%;
+  height: 40px;
+    left: 12%;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px;
+    background-color: #020230;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
+.option-btn:hover {
+background-color: crimson;
+}
+.moneyList { 
+  color: white;
+  width: 100%;
+}
+span{
+  margin-right: 20px;
+}
+#active{
+  background-color: rgb(213, 247, 247);
+  width: 100%;
+  color: black;
+  border-radius: 10px;
+  font-weight: 600;
+}
+#right{
+  background-color: green;
+}
+#wrong{
+  background-color: red;
+}
+.congratsImg{
+  position: absolute;
+    width: 20%;
+    top: 50px;
+    left: 40%;
+    border-radius: 50%;
+}
+.score{
+  position: absolute;
+    width: 40%;
+    top: 100px;
+    left: 63%;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    
 }
