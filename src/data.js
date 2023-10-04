@@ -14,7 +14,7 @@ export const moneyPyramid = [
   { id: 13, amount: "$ 250000" },
   { id: 14, amount: "$ 500000" },
   { id: 15, amount: "$ 1000000" },
-];
+].reverse();
 
 export const questions = [
   {
@@ -24,18 +24,22 @@ export const questions = [
       {
         text: "Phone",
         correct: false,
+        id: 0,
       },
       {
         text: "Watches",
         correct: true,
+        id: 1,
       },
       {
         text: "Food",
         correct: false,
+        id: 2,
       },
       {
         text: "Cosmetic",
         correct: false,
+        id: 3,
       },
     ],
   },
