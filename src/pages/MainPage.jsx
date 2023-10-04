@@ -99,7 +99,19 @@ const MainPage = () => {
               YOU HAVE TOTAL EARNINGS OF {totalEarn}
             </h1>
             <br />
-            <button onClick={() => navigate("/")} style={{ margin: "auto" }}>
+            <button
+              onClick={() => {
+                navigate("/");
+                setQuestion("");
+                setAnswer("");
+              }}
+              style={{
+                marginLeft: "50%",
+                padding: "10px",
+                borderRadius: "20px",
+                cursor: "pointer",
+              }}
+            >
               go back
             </button>
           </>
